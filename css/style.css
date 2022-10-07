@@ -3,10 +3,11 @@ body {
 }
 
 header {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 16px;
 }
 .container{
     margin: 16px 16px;
@@ -14,7 +15,7 @@ header {
 
 h1 {
     width: 89px;
-    height: 35;
+    height: 35px;
     color: #13183f;
     margin-top: 22px;
     margin-left: 16px;
@@ -53,6 +54,7 @@ h1 {
     justify-content: center;
     letter-spacing: 0.5px;
 }
+
 .max-text {
     width: 343px;
     height: 101px;
@@ -70,7 +72,7 @@ h1 {
     margin-top: 38px;
 }
 .first-text {
-    width: 343px;
+    max-width: 343px;
     height: 78px;
     color: #83869a;
     font-size: 16px;
@@ -121,6 +123,7 @@ h1 {
     display: flex;
     align-items: center;
 }
+
 .girl-whitedivs {
     position: relative;
     width: 100%;
@@ -143,7 +146,7 @@ h1 {
     position: absolute;
     top: 10%;
     right: 15%;
-    
+
 }
 .light-text {
     height: 28px;
@@ -195,7 +198,6 @@ h1 {
     width: 95%;
     height: 120px;
     background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
-    margin-left: 16px;
     margin-right: 16px;
     text-align: start;
     padding-left: 28px;
@@ -246,6 +248,8 @@ h1 {
     letter-spacing: 0.5px;
 }
 .text {
+    max-width: 286px;
+    max-height: 78px;
     margin-top: 16px;
     font-style: normal;
     line-height: 26px;
@@ -322,4 +326,66 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 1px;
+}
+@media screen and (min-width:670px){
+    .forresolution {
+        width: 100%;
+        height: 300px;
+    }
+    .text-first {
+        width: 40%;
+        float: left;
+    }
+    .girl-whitedivs {
+        width: 400px;
+        float: left;
+        margin-left: 12px;
+    }
+    .img-container {
+        width: 350px;
+        height: 350px;
+        position: relative;
+    }
+     .img-bg-container {
+        height: 329.93px;
+        width: 238.72px;
+        background-repeat: no-repeat;
+        background:linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    }
+    .girl-w-glass {
+        display: none;
+    }
+    .pink-div {
+        width: 339px;
+        height: 259px;
+        margin-top: 150px;
+    }
+    .inside-pinkdiv {
+        width: 286px;
+        height: 64px;
+    }
+    .boxes{
+        display: flex;
+        flex-wrap: wrap;
+        float: left;
+    }
+    .addtop {
+        margin-top: 99px;
+    }
+    .pink-button {
+        margin-top: 50px;
+    }
+    .icons-div-text {
+        width: 339px;
+        height:259px;
+    }
+    .for-foot {
+        margin-bottom: 86px;
+    }
+}
+@media screen and (min-width:1100px) {
+    .icons-div-text {
+        margin-top: 70px;
+    }
+
 }
