@@ -53,6 +53,8 @@ h1 {
     align-items: center;
     justify-content: center;
     letter-spacing: 0.5px;
+    z-index: 3;
+    transition: 1s;
 }
 
 .max-text {
@@ -106,6 +108,7 @@ h1 {
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 0.5px;
     margin-top: 24px;
+    transition: 1s;
 }
 
 .img-bg-container {
@@ -128,6 +131,7 @@ h1 {
     position: relative;
     width: 100%;
     height: 300px;
+    
 }
 .white-divs2 {
     display: flex;
@@ -278,6 +282,7 @@ h1 {
     font-family: 'Raleway', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 0.5px;
+    transition: 1s;
 }
 .for-margint {
     margin-top:48px;
@@ -305,6 +310,9 @@ footer {
     letter-spacing: 1px;
     margin-left: 16px;
 }
+.rectangle {
+    display: none;
+}
 .footer-but {
     margin-right: 16px;
     width: 140px;
@@ -326,11 +334,48 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 1px;
+    transition: 1s;
+}
+.pink-button:hover {
+    background:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.blue-button:hover {
+    background-color: #666ca3;
+    transform: scale(1.1);
+}
+.start:hover {
+    color: #ffa7c3;
+}
+.footer-but:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%); 
+    transform:scale(1.1);
 }
 @media screen and (min-width:670px){
+    .rectangle {
+        width: 50%;
+        display: block;
+        float: right;
+        position: relative;
+        top: -20%;
+        
+        z-index: 1;
+    }
+    .img-theme {
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    
+    } 
+    
     .forresolution {
         width: 100%;
         height: 300px;
+        display: flex;
+        justify-content: space-between;
     }
     .text-first {
         width: 40%;
@@ -340,13 +385,16 @@ footer {
         width: 400px;
         float: left;
         margin-left: 12px;
+        position: absolute;
+        z-index: 4;
+        
     }
     .img-container {
         width: 350px;
         height: 350px;
         position: relative;
     }
-     .img-bg-container {
+    .img-bg-container {
         height: 329.93px;
         width: 238.72px;
         background-repeat: no-repeat;
@@ -387,5 +435,27 @@ footer {
     .icons-div-text {
         margin-top: 70px;
     }
-
+    .max-text {
+        font-size: 56px;
+        width: 457px;
+        height: 143px;
+    }
+    .first-text {
+        font-size: 18px;
+        line-height: 28px;
+        width: 445ps;
+        height: 84px;
+    }
+    .container {
+        margin-left: 165px;
+    }
+    h1 {
+        margin-left: 165px;
+    }
+    .footer-text {
+        margin-left: 165px;
+    }
+    .addtop {
+        margin-top: 110px;
+    }
 }
